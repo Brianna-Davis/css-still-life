@@ -1,0 +1,81 @@
+<style>
+  
+  * { box-sizing: border-box; }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+	
+  .frame {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+  }
+  
+  .cup{
+    border: 1px solid black;
+    width: 70px;
+    height: 90px;
+    position: absolute;
+    left: 45%;
+    top: 30%;
+    border-radius: 10%;
+  }
+  .triangle{
+    width: 70%;
+    height: 90%;
+    background-color: red;
+    clip-path: polygon(49% 50%, 0 21%, 0 82%);
+    transform: translate(0%,0%);
+  }
+  .stripes{
+    background-image: linear-gradient(#262a97 51%, #ffffff 51%);
+  	background-size: 100% 40%;
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    
+  }
+  .bustelo-1{
+    border: 1px solid black;
+    width: 140px;
+    height: 209px;
+    position: absolute;
+    left: 35%;
+    bottom: 10%;
+    border-radius: 7%;
+    background-image: linear-gradient(#ffe01a 70%, #e00b0b 30%)
+  }
+  .bustelo-2{
+    border: 1px solid black;
+    width: 140px;
+    height: 175px;
+    position: absolute;
+    left: 17%;
+    bottom: 17%;
+    border-radius: 7%;
+    background-image: linear-gradient(#ffe01a 70%, #e00b0b 30%)
+  }
+
+</style>
+
+
+<div class="frame">
+  <div class="cafetera"></div>
+  <div class="bustelo-2"></div>
+  <div class="bustelo-1"></div>
+  <div class="cup">
+  	<div class="triangle"></div>
+  	<div class="stripes"></div>
+  </div>
+  
+	<!-- ur HTML code goes here -->  
+</div>
