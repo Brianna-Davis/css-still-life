@@ -59,11 +59,12 @@
     width: 140px;
     height: 175px;
     position: absolute;
-    left: 17%;
+    left: 23%;
     bottom: 17%;
     border-radius: 7%;
-    background-image: linear-gradient(#ffe01a 70%, #e00b0b 30%)
+    background-image: linear-gradient(#ffe01a 70%, #e00b0b 30%);
   }
+
   .cafetera{
     position: absolute;
     top: 100px;
@@ -76,11 +77,58 @@
     width: 90%;
     height: 55%;
     position: absolute;
-    top: 15%;
+    top: 16%;
     left: 6%;
     background-image: linear-gradient(to right, #f26202 25%, #f2721c 0%, #ff8b1f 52%, #ff810a 47%, #ff7b24 74%, #ff7a33 0%);
  		z-index: 5;
     transform: perspective(270px) rotateX(-30deg);
+  }
+  .bustelo-1-label{
+    position: relative;
+    font-size: 30px;
+    color: #072a63;
+    font-family: Luminari, fantasy;
+  }
+  .bustelo-2-label{
+    position: relative;
+    font-size: 30px;
+    color: #072a63;
+    font-family: Luminari, fantasy;
+    bottom: 5%;
+  }
+  .bustelo-1-text{
+    position: absolute;
+    color: #072a63;
+    font-family: Luminari, fantasy;
+    font-size: 13px;
+    bottom: 26%;
+  }
+  .bustelo-2-text{
+    position: absolute;
+    color: #072a63;
+    font-family: Luminari, fantasy;
+    font-size: 13px;
+    bottom: 26%; 
+    right: 57%;
+  }
+  .logo-red{
+    position: absolute;
+    width: 25%;
+    height: 20%;
+    background-color: red;
+    clip-path: polygon(50% 87%, 0 0, 100% 0);
+    transform: translate(0%,0%);
+    left: 40%;
+    top: 15%;
+  }
+  .logo-black{
+    position: absolute;
+    background-color: #2e302f;
+    width: 35%;
+    height: 20%;
+    clip-path: polygon(50% 61%, 0 100%, 100% 100%);
+    left: 35%;
+    top: 5%;
   }
 
 </style>
@@ -90,8 +138,20 @@
   <div class="cafetera">
     <div class="caf-middle"></div>
   </div>
-  <div class="bustelo-2"></div>
-  <div class="bustelo-1"></div>
+  <div class="bustelo-2">
+    <p class="bustelo-2-label">CAF<br>BUS</p>
+    <p class="bustelo-2-text">
+      Cafe Es
+    </p>
+  </div>
+  <div class="bustelo-1">
+    <div class="logo-black"></div>
+    <div class="logo-red"></div>
+    <p class="bustelo-1-label">FE<br>TELO</p>
+    <p class="bustelo-1-text">
+      Ground Coffee
+    </p>
+  </div>
   <div class="cup">
   	<div class="triangle"></div>
   	<div class="stripes"></div>
